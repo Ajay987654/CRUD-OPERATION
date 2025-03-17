@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JAVASCRIPT</title>
     <link rel="stylesheet" href="css\style.css" />
 </head>
 
@@ -24,7 +24,10 @@
             <label for="city">City</label>
             <input type="text" id="city" placeholder="City" />
         </div>
-        <button type="Submit" class="btn">Save</button>
+    <button type="Submit" class="btn">
+        <ion-icon name="save-outline"></ion-icon>
+        Save
+    </button>
     </form>
     <table>
         <thead>
@@ -39,55 +42,31 @@
 
         </thead>
 
-        <body>
+        <tbody id="tblBody">
             <tr>
                 <td>1</td>
                 <td>John</td>
                 <td>18</td>
                 <td>Covai</td>
                 <td>
-                    <button>
-                <ion-icon name="create-outline"></ion-icon>
-            </button>
+                    <button class="btn-edit">
+                        <ion-icon name="create-outline"></ion-icon>
+                    </button>
                 </td>
                 <td>
-                    <button><i class="bi bi-trash"></i></button></td>
+                    <button class="btn-delete">
+                        <ion-icon name="trash-outline"></ion-icon>
+                    </button>
+                </td>
             </tr>
-            <thead>
-                <th>S.No</th>
-                <th>Name</th>
-                <th>Age</th>
-                <th>City</th>
-                <th>Edit</th>
-                <th>Delete</th>
 
 
 
-            </thead>
-
-            <body>
-                <tr>
-                    <td>1</td>
-                    <td>John</td>
-                    <td>18</td>
-                    <td>Covai</td>
-                    <td>
-                        <button>
-                    <ion-icon name="create-outline"></ion-icon>
-                </button>
-                    </td>
-                    <td>
-                        <button>
-                            <ion-icon class="bi bi-trash"></ion-icon>
-                        </button>
-                    </td>
-                </tr>
-
-
-            </body>
-    </table>
-    <script src=" js\script.js ">
-    </script>
+        </tbody>
+    </table>    
+    <script src="script.js" type="module"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     </body>
 
 </html>
